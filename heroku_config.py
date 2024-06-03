@@ -9,9 +9,9 @@ class Var(object):
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
     LOGGER = True
     GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
-    GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
+    GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME","TechnoAyanBOT")
     # Here for later purposes
-    SUDO_USERS = os.environ.get("SUDO_USERS", "719877937")
+    SUDO_USERS = os.environ.get("SUDO_USERS", "6214889840")
     LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -27,7 +27,7 @@ class Var(object):
         t_file = open(TEMP_DOWNLOAD_DIRECTORY+"auth_token.txt","w")
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
-    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", -"1002072662567")
     if PRIVATE_GROUP_ID != None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
